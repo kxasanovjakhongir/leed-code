@@ -1,0 +1,11 @@
+function start(n){
+    if(n<0)return n
+    let one=0
+    for(let i=n;i>=1;i=Math.floor(i/10)){
+        one=one*10+i%10
+    }
+    return one
+}
+
+let stop=start(123)   // 321
+console.log(stop);
